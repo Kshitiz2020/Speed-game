@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(fishing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Sedgwick Ave Display", cursive, "Roboto Serif", serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 4rem;
+  color: green;
+}
+
+/* img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+} */
+
+.circles {
+  background-image: url(fish.jpg);
+  background-size: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-left: 220px;
+  margin-top: 170px;
+}
+
+.btn {
+  padding: 30px;
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 200px;
+  background-color: greenyellow;
+  border-radius: 20%;
+}
+
+.dot {
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.dot.active {
+  background-color: tomato;
+  background-image: url(fish.jpg);
+}
