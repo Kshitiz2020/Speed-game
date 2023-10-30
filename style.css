@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Sedgwick Ave Display", cursive, "Roboto Serif", serif;
+  text-align: center;
 }
 
 .container {
@@ -29,9 +30,6 @@ h1 {
 } */
 
 .circles {
-  background-image: url(fish.jpg);
-  background-size: center;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +48,7 @@ h1 {
 }
 
 .dot {
-  background-color: white;
+  background-color: transparent;
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -58,6 +56,47 @@ h1 {
 }
 
 .dot.active {
-  background-color: tomato;
-  background-image: url(fish.jpg);
+  background-image: url("./fish2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  background-color: rgba(51, 51, 51, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal {
+  background-color: red;
+  /* display: none; */
+  width: 900px;
+  height: 400px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 0px;
+  position: fixed;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px #cccccc;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal h2 {
+  margin: 20px 0;
+}
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
